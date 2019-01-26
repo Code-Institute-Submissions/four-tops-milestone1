@@ -48,6 +48,37 @@
     margin-right: 0;
 }
 
+/*----------------------------------------Article main page */
+
+.row-quote {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 2px;
+    background-color: #fafafa;
+}
+
+.quote-container {
+    border-color: #ffc94c;
+    border: dotted 10px;
+    padding: 80px 0px 80px 0px;
+}
+
+.quote-mainpage {
+    font-family: "Staatliches", sans-serif;
+    display: inline-block;
+    text-align: center;
+    color: #ffc94c;
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.quotee {
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+    color: #ffc94c;
+}
+
 /*----------------------------------------Footer */
 
 #base-foot {
