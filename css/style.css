@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/*--------------------------------------------------------------Nav Elements */
+/*---------------------------------------------------------------Nav Elements */
 
 .topnav {
-    background-color: #353434;
+    background-color: #757373;
     overflow: hidden;
     padding: 10px;
     margin-left: -15px;
@@ -43,7 +43,7 @@
     border: 1px solid #ffffff;
 }
 
-/*----------------------------------------Index main bg */
+/*--------------------------------------------------------------Index main bg */
 
 .image-wrapper, img {
     width: 100%;
@@ -54,7 +54,7 @@
     margin-right: 0;
 }
 
-/*----------------------------------------Article main page */
+/*----------------------------------------------------------Article main page */
 
 .row-quote {
     margin-right: -15px;
@@ -85,7 +85,7 @@
     color: #ffc94c;
 }
 
-/*----------------------------------------Alert Box */
+/*------------------------------------------------------------------Alert Box */
 
 .alert-container .col-xs-12 {
     padding-left: 0;
@@ -105,7 +105,7 @@
     text-decoration: none;
 }
 
-/*----------------------------------------Footer */
+/*---------------------------------------------------------------------Footer */
 
 #base-foot {
     font-family: "Staatliches", sans-serif;
@@ -143,4 +143,4 @@
     transition: all 0.5s ease-in-out;
 }
 
-/*------------------------------- Media Queries */
+/*------------------------------------------------------------- Media Queries */
