@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
 <!--------------------------------------Style Sheets and bootstrap/Font links-->    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-<!-------------------------------------/Style Sheets and bootstrap/Font links-->  
-    <title>Four Tops | Events</title>
+<!-------------------------------------/Style Sheets and bootstrap/Font links-->
+    <title>Four Tops | Home</title>
 
 </head>
 
 <body>
 <!--------------------------------------------------------------------Nav Bar-->
     <nav class="container-fluid">
-        <div class="topnav">
-            <a class="logo" href="#home"><img src="images/ftlogo.png" alt="Four Tops"></a>
-                <span class="topnav-right col-xs-12 col-sm-8">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a class="active" href="events.html">Events</a>
-                    <a href="#">Photos</a>
-                    <a href="#">Videos</a>
-                    <a href="#">Audio</a>
-                </span>
+        <div class="row">
+            <div class="topnav col-xs-12">
+                    <a href="index.html"><img src="images/ftlogo.png" alt="Four Tops"></a>
+                        <ul class="topnav-links col-xs-12">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a</li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="media.html">Media</a></li>
+                        </ul>
+            </div>
         </div>
     </nav>
 <!-------------------------------------------------------------------/Nav Bar-->
 
-    <section class="container-fluid"></section>
+    <section></section>
 
 <!----------------------------------------------------------------------Alert-->
     <article class="alert-box">
@@ -49,21 +51,22 @@
 
 <!---------------------------------------------------------------------Footer-->
     <footer class="container-fluid">
-        <div id="base-foot">
-            <h3 class="uppercase footer-text">Want to see even more?</h3>
-            <h4 class="footer-main">You can follow us on Social Media with these links!</h4>
+        <div class="row">
+            <div class="footer-container col-xs-12">
+                <p class="footer-banner uppercase">Be sure to also follow us on</p>
                 <ul class="list-inline social-links">
                     <li><a class="target_blank" href="/"><i class="fa fa-facebook"></i></a></li>
                     <li><a class="target_blank" href="/"><i class="fa fa-twitter"></i></a></li>
                     <li><a class="target_blank" href="/"><i class="fa fa-youtube"></i></a></li>
                </ul>
+           </div>
         </div>
     </footer>
 <!--------------------------------------------------------------------/Footer-->
 
-<!--------------------------------------------------------------Java & Jquery-->
+<!--------------------------------------------------------------Java & JQuery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-------------------------------------------------------------/Java & Jquery-->
+<!-------------------------------------------------------------/Java & JQuery-->
 </body>
 </html>

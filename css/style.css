@@ -1,69 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
 /*---------------------------------------------------------------Nav Elements */
 
+div a img {
+    width: 75%;
+    margin-left: 12%;
+}
+
 .topnav {
-    background-color: #757373;
-    overflow: hidden;
-    padding: 10px;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.logo {
-    float: left;
-    margin-right: 0;
-    min-height: 60px;
-}
-
-.topnav a {
-    color: #fafafa;
-    font-weight: 500;
+    background-color: #353434;
+    min-height: 100px;
     text-decoration: none;
-    letter-spacing: 1.5px;
-    margin-left: 5px;
+}
+
+/*--------------------------Also style footer to mobile 1st
+------------------------------Change main page logo to fit for mobile and not got past 100% of page width? */
+
+.topnav-links {
+    display: block;
+    position: relative;
+}
+
+.topnav-links li {
     font-family: "Staatliches", sans-serif;
-    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border-bottom: solid 1px;
+    border-bottom-color: #ffc94c;
+    border-top: solid 1px;
+    border-top-color: #ffc94c;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    letter-spacing: 1.5;
+    margin-bottom: 5px;
 }
 
-.topnav a:hover {
+.topnav-links li a {
+    color: #fafafa; 
+    text-transform: capitalize;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.topnav-links li a:hover {
     color: #ffc94c;
-}
-
-.topnav-right {
-    float: right;
-    margin-top: 15px;
-    margin-right: 10px;
-    font-size: x-large;
-}
-
-.navbar-toggle {
-    color: #ffffff;
-    vertical-align: middle;
-    border: 1px solid #ffffff;
 }
 
 /*--------------------------------------------------------------Index main bg */
 
-.image-wrapper, img {
+
+.image-wrapper img {
     width: 100%;
     height: 100%;
 }
 
-.row {
-    margin-right: 0;
-}
-
 /*----------------------------------------------------------Article main page */
 
-.row-quote {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: 2px;
-    background-color: #fafafa;
-}
-
 .quote-container {
+    background-color: #fafafa;
     border-color: #ffc94c;
     border: dotted 10px;
     padding: 80px 0px 80px 0px;
@@ -79,7 +75,7 @@
     padding-left: 10px;
 }
 
-.quotee {
+.quote-artist {
     font-family: "Staatliches", sans-serif;
     text-align: center;
     color: #ffc94c;
@@ -98,7 +94,6 @@
     border-color: #ffc94c;
     padding: 5px 10px 5px 0px;
     margin-bottom: 0;
-    margin-right: -15px;;
     border: 1px solid transparent;
     border-radius: 0;
     text-align: center;
@@ -107,25 +102,22 @@
 
 /*---------------------------------------------------------------------Footer */
 
-#base-foot {
-    font-family: "Staatliches", sans-serif;
-    letter-spacing: 1.5px;
+.footer-container {
     background-color: #353434;
-    color: #fafafa;
-    max-height: 133px;
-    text-align: center;
-    font-size: x-large;
-    padding-top: 1px;
-    margin-left: -15px;
-    margin-right: -15px;
+    min-height: 100px;
 }
 
-.footer-text {
+.footer-banner {
     color: #ffc94c;
+    font-family: "Staatliches", sans-serif;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .social-links {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .social-links li a i {
@@ -136,11 +128,36 @@
     text-align: center;
     color: #fafafa;
     margin-top: -13px;
+    transition: all 0.5s ease-in-out;
 }
 
 .social-links li a i:hover {
     color: #ffc94c;
-    transition: all 0.5s ease-in-out;
 }
 
 /*------------------------------------------------------------- Media Queries */
+
+@media only screen and (min-width: 768px) {
+    
+    div a img {
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+        margin-top: -15px;
+    }
+    
+    .topnav-links {
+        text-align: center;
+        margin-top: -20px;
+        font-size: x-large;
+    }
+    
+    .topnav-links li {
+        display: inline;
+        border-top-style: hidden;
+        border-bottom-style: hidden;
+        margin-left: 5%;
+        margin-right: 5%;
+        letter-spacing: 2px;
+    }
+}
