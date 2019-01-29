@@ -83,6 +83,16 @@ div a img {
 
 /*-----------------------------------------------------------------Artist Bio */
 
+.artist-title {
+    background-color: #353434;
+    width: 100%;
+    font-family: "Staatliches", sans-serif;
+    color: #ffc94c;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: -15px;
+}
+
 .artistbio-container {
     background-color: #353434;
     width: 100%;
@@ -91,16 +101,11 @@ div a img {
     padding-bottom: 20px;
 }
 
-#artist-image {
-    float: left;
-    position: relative;
-    max-height: 20px;
-    max-width: 20px;
-}
-
 .artist {
     font-family: "Staatliches", sans-serif;
     color: #fafafa;
+    display: inline;
+    min-height: 175px;
 }
 
 .artist h3 {
@@ -109,19 +114,38 @@ div a img {
 
 .artist-left {
     float: left;
+    margin-bottom: 15px;
 }
 
-#artist-image-left {
-    float: left;
+.artist-image-left {
     position: relative;
+    display: inline;
 }
 
 .artist-right {
     float: right;
+    margin-bottom: 15px;
 }
 
-#artist-image-right {
-    float: right;
+.artist-image-right {
+    position: relative;
+    display: inline;
+}
+
+#artist-photo {
+    height: 30%;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.artist-sub-title {
+    width: 100%;
+    color: #ffc94c;
+    font-size: 30px;
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*------------------------------------------------------------------Alert Box */
