@@ -81,6 +81,49 @@ div a img {
     color: #ffc94c;
 }
 
+/*-----------------------------------------------------------------Artist Bio */
+
+.artistbio-container {
+    background-color: #353434;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#artist-image {
+    float: left;
+    position: relative;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.artist {
+    font-family: "Staatliches", sans-serif;
+    color: #fafafa;
+}
+
+.artist h3 {
+    color: #ffc94c;
+}
+
+.artist-left {
+    float: left;
+}
+
+#artist-image-left {
+    float: left;
+    position: relative;
+}
+
+.artist-right {
+    float: right;
+}
+
+#artist-image-right {
+    float: right;
+}
+
 /*------------------------------------------------------------------Alert Box */
 
 .alert-container .col-xs-12 {
