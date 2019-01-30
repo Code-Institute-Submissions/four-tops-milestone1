@@ -112,8 +112,9 @@ div a img {
 .artist {
     font-family: "Staatliches", sans-serif;
     color: #fafafa;
-    display: inline;
+    display: block;
     min-height: 175px;
+    margin-bottom: 20px;
 }
 
 .artist h3 {
@@ -121,12 +122,13 @@ div a img {
 }
 
 .artist-left {
-    float: left;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     border: 2.5px dotted;
     border-color: #ffc94c;
     margin-right: -5px;
     margin-left: -5px;
+    max-height: 225px;
+    overflow: hidden;
 }
 
 .artist-image-left {
@@ -134,16 +136,19 @@ div a img {
 }
 
 .artist-right {
-    float: right;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     border: 2.5px dotted;
     border-color: #ffc94c;
     margin-right: -5px;
     margin-left: -5px;
+    max-height: 225px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    float: left
 }
 
 .artist-image-right {
-    display: inline-block;
+    display: block;
 }
 
 .artist-sub-title {
@@ -157,8 +162,8 @@ div a img {
 }
 
 #artist-link {
-    float: left;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
  #artist-photo {
@@ -169,7 +174,74 @@ div a img {
 .artist-text {
     font-family: "Staatliches", sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+}
+
+/*-----------------------------------------------------------Tour Dates/Events*/
+
+.background-color-timeline {
+    background-color: #353434;
+}
+
+.bg-color-tour-dates h2 {
+    color: #ffc94c;
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+}
+
+.timeline-item h4 {
+    color: #ffc94c;
+    font-family: "Staatliches", sans-serif;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #ffc94c;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+    color: #fafafa;
+}
+
+.timeline-item:before {
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: "";
+    background: #fafafa;
+    
+}
+
+.tour-date-items {
+    margin-bottom: 30px;
+}
+
+.btn {
+    color: #fafafa;
+    background-color: #ffc94c;
+    border: none;
+    font-weight: 500;
 }
 
 /*------------------------------------------------------------------Alert Box */
@@ -250,5 +322,10 @@ div a img {
         margin-left: 5%;
         margin-right: 5%;
         letter-spacing: 2px;
+    }
+    
+    .tour-date-items {
+        margin-left: 150px;
+        text-align: center;
     }
 }
