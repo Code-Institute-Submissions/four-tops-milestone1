@@ -119,6 +119,13 @@ div a img {
 
 .artist h3 {
     color: #ffc94c;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.artist h4 {
+    text-align: center;
+    margin-top: -8px;
 }
 
 .artist-left {
@@ -129,6 +136,7 @@ div a img {
     margin-left: -5px;
     max-height: 225px;
     overflow: hidden;
+    float: left;
 }
 
 .artist-image-left {
@@ -144,7 +152,7 @@ div a img {
     max-height: 225px;
     padding-bottom: 10px;
     overflow: hidden;
-    float: left
+    float: right
 }
 
 .artist-image-right {
@@ -213,7 +221,7 @@ div a img {
     left: 2.5em;
     top: 3em;
     display: block;
-    font-family: "Exo", sans-serif;
+    font-family: "Staatliches", sans-serif;
     font-weight: 500;
     font-size: .8em;
     padding: 0;
@@ -242,6 +250,88 @@ div a img {
     background-color: #ffc94c;
     border: none;
     font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fafafa;
+    color: #ffc94c;
+}
+
+/*-------------------------------------------------------------------Carousel */
+
+.header-media {
+    color: #ffc94c;
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.carousel-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #353434
+}
+
+.glyphicon-chevron-left {
+    color: #ffc94c;
+}
+
+.glyphicon-chevron-right {
+    color: #ffc94c;
+}
+
+.carousel-inner img{
+    display:inline-block;
+    margin: auto;
+    vertical-align: middle;
+}
+
+/*----------------------------------------------------------------------Audio */
+
+.music-container {
+    background-color: #353434;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.music-player1 {
+    border: 1.5px solid;
+    border-color: #ffc94c;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+.music-player2 {
+    border: 1.5px solid;
+    border-color: #ffc94c;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------Video */
+
+.video-container {
+    background-color: #353434;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iframe-video1 {
+    padding: 0;
+    margin: 10px 0px 10px 0px;
+    border: 1.5px solid;
+    border-color: #ffc94c;
+}
+
+.iframe-video2 {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 10px 5px 10px;
+    border: 1.5px solid;
+    border-color: #ffc94c;
+    float: right;
 }
 
 /*------------------------------------------------------------------Alert Box */
@@ -311,8 +401,9 @@ div a img {
     
     .topnav-links {
         text-align: center;
-        margin-top: -20px;
-        font-size: x-large;
+        margin-top: -35px;
+        margin-bottom: -5px;
+        font-size: 50px;
     }
     
     .topnav-links li {
@@ -327,5 +418,20 @@ div a img {
     .tour-date-items {
         margin-left: 150px;
         text-align: center;
+    }
+    
+    .iframe-video1 {
+        float: left;
+        margin: 5px 10px 5px 10px;
+    }
+    
+    .music-player1 {
+        margin-left: 10px;
+        float: left;
+    }
+    
+    .music-player2 {
+        margin-right: 10px;
+        float: right;
     }
 }
