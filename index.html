@@ -18,51 +18,59 @@
 
 <body>
 <!--------------------------------------------------------------------Nav Bar-->
-    <nav class="container-fluid">
-        <div class="row">
-            <div class="topnav col-xs-12">
-                    <a href="index.html"><img src="images/ftlogo.png" alt="Four Tops"></a>
-                        <ul class="topnav-links col-xs-12">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="media.html">Media</a></li>
-                        </ul>
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="topnav col-xs-12">
+                        <a href="index.html"><img src="images/ftlogo.png" alt="Four Tops"></a>
+                            <ul class="topnav-links col-xs-12">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="media.html">Media</a></li>
+                            </ul>
+                </div>
             </div>
         </div>
     </nav>
 <!-------------------------------------------------------------------/Nav Bar-->
 
 <!--------------------------------------------------------------Main Image bg-->
-    <section class="continer-fluid">
-        <div class="row">
-            <div class="image-wrapper col-xs-12">
-                <img src="images/indeximg1.jpg" alt="Four Tops">
+    <section>
+        <div class="continer-fluid">
+            <div class="row">
+                <div class="image-wrapper col-xs-12">
+                    <img src="images/indeximg1.jpg" alt="Four Tops">
+                </div>
             </div>
         </div>
     </section>
 <!-------------------------------------------------------------/Main Image bg-->
 
 <!---------------------------------------------------------------Quote Bottom-->
-    <article class="container-fluid">
-        <div class="row">
-            <div class="quote-container">
-                <p class=" uppercase quote-mainpage"><i>"The vocal quartet from Detroit, Michigan, USA, who helped to define the city's Motown sound of the 1960's"</i>
-                </br><p class="quote-artist">-Wikipedia</p>
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="quote-container">
+                    <p class=" uppercase quote-mainpage"><i>"The vocal quartet from Detroit, Michigan, USA, who helped to define the city's Motown sound of the 1960's"</i>
+                    <br><p class="quote-artist">-Wikipedia</p>
+                </div>
             </div>
         </div>
     </article>
 <!--------------------------------------------------------------/Quote Bottom-->
 
 <!----------------------------------------------------------------------Alert-->
-    <article class="alert-box">
-        <div class="container-fluid alert-container hidden-xs">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="site-wide-alert alert alert-warning">
-                        <strong>We now take event bookings!</strong>
-                        <button class="btn btn-default btn-modal" data-toggle="modal" data-target="#eventModal"><strong>Contact Us Here!</strong></button>
-                        <strong>We now take event bookings!</strong>
+    <article>
+        <div class="alert-box">
+            <div class="container-fluid alert-container hidden-xs">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="site-wide-alert alert alert-warning">
+                            <strong>We now take event bookings!</strong>
+                            <button class="btn btn-default btn-modal" data-toggle="modal" data-target="#eventModal"><strong>Contact Us Here!</strong></button>
+                            <strong>We now take event bookings!</strong>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,55 +79,59 @@
 <!---------------------------------------------------------------------/Alert-->
 
 <!----------------------------------------------------------------------Modal-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">How Can We Make Your Day?</h4>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required/>
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">How Can We Make Your Day?</h4>
                       </div>
-                      <div class="form-group">
-                        <label for="email1">Email Address</label>
-                        <input type="email" class="form-control" id="email1" placeholder="Your E-mail" required/>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="email1">Email Address</label>
+                            <input type="email" class="form-control" id="email1" placeholder="Your E-mail" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="mobile">Your Contact number Number</label>
+                            <input type="tel" class="form-control" id="mobile" placeholder="Enter a Contact Number Number (Optional)">
+                          </div>
+                          <div class="form-group">
+                            <label for="projectsummary">Summary of Your Expectations</label>
+                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="What is it you want us to do?" required/></textarea>
+                          </div>
+                          <p class="help-block">Make sure to let us know WHEN and WHERE! <br> Also what can we do to make your event a success</p>
+                          <button type="submit" class="btn btn-submit btn-success center-block">Send!</button>
+                        </form>
                       </div>
-                      <div class="form-group">
-                        <label for="mobile">Your Contact number Number</label>
-                        <input type="mobile" class="form-control" id="mobile" placeholder="Enter a Contact Number Number (Optional)">
-                      </div>
-                      <div class="form-group">
-                        <label for="projectsummary">Summary of Your Expectations</label>
-                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="What is it you want us to do?" required/></textarea>
-                      </div>
-                      <p class="help-block">Make sure to let us know WHEN and WHERE! </br> Also what can we do to make your event a success</p>
-                      <button type="submit" class="btn btn-submit btn-success center-block">Send!</button>
-                    </form>
+                    </div>
                   </div>
                 </div>
-              </div>
             </div>
         </div>
-    </div>
+    </article>
 <!---------------------------------------------------------------------/Modal-->
 
 <!---------------------------------------------------------------------Footer-->
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="footer-container col-xs-12">
-                <p class="footer-banner uppercase">Be sure to also follow us on</p>
-                <ul class="list-inline social-links">
-                    <li><a class="target_blank" href="https://www.facebook.com/FourTops/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="target_blank" href="https://twitter.com/four_tops"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="target_blank" href="https://www.youtube.com/channel/UCCc9TFYFrV3xpNl5onNtVA"><i class="fa fa-youtube"></i></a></li>
-               </ul>
-           </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer-container col-xs-12">
+                    <p class="footer-banner uppercase">Be sure to also follow us on</p>
+                    <ul class="list-inline social-links">
+                        <li><a target="_blank" href="https://www.facebook.com/FourTops/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/four_tops"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UCCc9TFYFrV3xpNl5onNtVA"><i class="fa fa-youtube"></i></a></li>
+                   </ul>
+               </div>
+            </div>
         </div>
     </footer>
 <!--------------------------------------------------------------------/Footer-->
