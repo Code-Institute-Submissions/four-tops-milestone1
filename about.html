@@ -54,7 +54,7 @@
                             <h3 class="col-xs-12">Levi Stubbs<h4 class="col-xs-12">June 6, 1936 – October 17, 2008</h4></h3>
                                 <div class="artist-image-left col-xs-12"> 
                                     <a href="https://en.wikipedia.org/wiki/Levi_Stubbs" id="artist-link" class="hidden-xs col-sm-4" target="_blank"><img src="images/artists/levi.jpg" alt="Levi Stubbs" id="artist-photo" class="img-circle height=100 width=100"></a>
-                                    <p class="artist-text col-xs-12 col-sm-8">The lead vocalist of the group. He has been noted for his powerful, emotional, dramatic style of singing.</p>
+                                    <p class="artist-text col-xs-12 sm-8">The lead vocalist of the group. He has been noted for his powerful, emotional, dramatic style of singing.</p>
                                 </div>
                         </div>
                     </div>
@@ -133,7 +133,9 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="site-wide-alert alert alert-warning">
-                        <strong>We now take event bookings!</strong> Need someone to help the party pop?<a href="/"> Click here to contact us!</a>
+                        <strong>We now take event bookings!</strong>
+                        <button class="btn btn-default btn-modal" data-toggle="modal" data-target="#eventModal"><strong>Contact Us Here!</strong></button>
+                        <strong>We now take event bookings!</strong>
                     </div>
                 </div>
             </div>
@@ -141,15 +143,54 @@
     </article>
 <!---------------------------------------------------------------------/Alert-->
 
+<!----------------------------------------------------------------------Modal-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">How Can We Make Your Day?</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required/>
+                      </div>
+                      <div class="form-group">
+                        <label for="email1">Email Address</label>
+                        <input type="email" class="form-control" id="email1" placeholder="Your E-mail" required/>
+                      </div>
+                      <div class="form-group">
+                        <label for="mobile">Your Contact number Number</label>
+                        <input type="mobile" class="form-control" id="mobile" placeholder="Enter a Contact Number Number (Optional)">
+                      </div>
+                      <div class="form-group">
+                        <label for="projectsummary">Summary of Your Expectations</label>
+                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="What is it you want us to do?" required/></textarea>
+                      </div>
+                      <p class="help-block">Make sure to let us know WHEN and WHERE! </br> Also what can we do to make your event a success</p>
+                      <button type="submit" class="btn btn-submit btn-success center-block">Send!</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------------/Modal-->
+
 <!---------------------------------------------------------------------Footer-->
     <footer class="container-fluid">
         <div class="row">
             <div class="footer-container col-xs-12">
                 <p class="footer-banner uppercase">Be sure to also follow us on</p>
                 <ul class="list-inline social-links">
-                    <li><a class="target_blank" href="/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="target_blank" href="/"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="target_blank" href="/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a class="target_blank" href="https://www.facebook.com/FourTops/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="target_blank" href="https://twitter.com/four_tops"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="target_blank" href="https://www.youtube.com/channel/UCCc9TFYFrV3xpNl5onNtVA"><i class="fa fa-youtube"></i></a></li>
                </ul>
            </div>
         </div>

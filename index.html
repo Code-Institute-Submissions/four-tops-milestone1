@@ -60,7 +60,9 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="site-wide-alert alert alert-warning">
-                        <strong>We now take event bookings!</strong> Need someone to help the party pop?<a href="/"> Click here to contact us!</a>
+                        <strong>We now take event bookings!</strong>
+                        <button class="btn btn-default btn-modal" data-toggle="modal" data-target="#eventModal"><strong>Contact Us Here!</strong></button>
+                        <strong>We now take event bookings!</strong>
                     </div>
                 </div>
             </div>
@@ -68,15 +70,54 @@
     </article>
 <!---------------------------------------------------------------------/Alert-->
 
+<!----------------------------------------------------------------------Modal-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">How Can We Make Your Day?</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required/>
+                      </div>
+                      <div class="form-group">
+                        <label for="email1">Email Address</label>
+                        <input type="email" class="form-control" id="email1" placeholder="Your E-mail" required/>
+                      </div>
+                      <div class="form-group">
+                        <label for="mobile">Your Contact number Number</label>
+                        <input type="mobile" class="form-control" id="mobile" placeholder="Enter a Contact Number Number (Optional)">
+                      </div>
+                      <div class="form-group">
+                        <label for="projectsummary">Summary of Your Expectations</label>
+                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="What is it you want us to do?" required/></textarea>
+                      </div>
+                      <p class="help-block">Make sure to let us know WHEN and WHERE! </br> Also what can we do to make your event a success</p>
+                      <button type="submit" class="btn btn-submit btn-success center-block">Send!</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------------/Modal-->
+
 <!---------------------------------------------------------------------Footer-->
     <footer class="container-fluid">
         <div class="row">
             <div class="footer-container col-xs-12">
                 <p class="footer-banner uppercase">Be sure to also follow us on</p>
                 <ul class="list-inline social-links">
-                    <li><a class="target_blank" href="/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="target_blank" href="/"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="target_blank" href="/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a class="target_blank" href="https://www.facebook.com/FourTops/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="target_blank" href="https://twitter.com/four_tops"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="target_blank" href="https://www.youtube.com/channel/UCCc9TFYFrV3xpNl5onNtVA"><i class="fa fa-youtube"></i></a></li>
                </ul>
            </div>
         </div>

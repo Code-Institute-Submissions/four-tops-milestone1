@@ -94,11 +94,15 @@ div a img {
 .artist-title {
     background-color: #353434;
     width: 100%;
-    font-family: "Staatliches", sans-serif;
-    color: #ffc94c;
     text-align: center;
     padding-top: 10px;
     margin-bottom: -15px;
+}
+
+.artist-title h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 60px;
+    color: #ffc94c;
 }
 
 .artistbio-container {
@@ -164,6 +168,7 @@ div a img {
     color: #ffc94c;
     font-size: 30px;
     font-family: "Staatliches", sans-serif;
+    font-size: 60px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -185,21 +190,45 @@ div a img {
     font-size: 17px;
 }
 
+/*-----------------------------------------------------------Form Contact Page*/
+
+.form-main {
+    background-color: #353434;
+    position: relative;
+}
+
+.form-heading-container {
+    color: #ffc94c;
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+}
+
+.form-heading-container h2 {
+    font-size: 60px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
 /*-----------------------------------------------------------Tour Dates/Events*/
 
 .background-color-timeline {
     background-color: #353434;
+    padding-top: 50px;
 }
 
 .bg-color-tour-dates h2 {
     color: #ffc94c;
     text-align: center;
     font-family: "Staatliches", sans-serif;
+    font-size: 50px;
 }
 
 .timeline-item h4 {
     color: #ffc94c;
-    font-family: "Staatliches", sans-serif;
 }
 
 .timeline-item {
@@ -223,9 +252,9 @@ div a img {
     display: block;
     font-family: "Staatliches", sans-serif;
     font-weight: 500;
-    font-size: .8em;
+    font-size: 1,2em;
     padding: 0;
-    margin: 0;
+    margin-top: -22px;
 }
 
 .timeline-item:after {
@@ -264,7 +293,8 @@ div a img {
     color: #ffc94c;
     font-family: "Staatliches", sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+    padding-top: 50px;
 }
 
 .carousel-container {
@@ -353,6 +383,46 @@ div a img {
     text-decoration: none;
 }
 
+.btn-modal {
+    background-color: #ffc94c;
+    color: #fafafa;
+    transition: all 1s ease-in-out;
+}
+
+.btn-modal:hover {
+    background-color: #fafafa;
+    color: #ffc94c;
+}
+
+/*----------------------------------------------------------------------Modal */
+.modal-content {
+    background-color: #353434;
+    color: #ffc94c;
+    border: 1px solid;
+    border-color: #ffc94c;
+}
+
+.form-control {
+    background-color: #fafafa;
+    border: 1px solid;
+    border-color: #ffc94c;
+}
+
+.help-block {
+    color: #ffc94c;
+    text-align: center;
+}
+
+.btn-submit {
+    transition: all 1.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #fafafa;
+    color: #ffc94c;
+}
+
 /*---------------------------------------------------------------------Footer */
 
 .footer-container {
@@ -433,5 +503,9 @@ div a img {
     .music-player2 {
         margin-right: 10px;
         float: right;
+    }
+    
+    .center-form {
+    max-width: 50%;
     }
 }
