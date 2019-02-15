@@ -89,6 +89,27 @@ div a img {
     color: #ffc94c;
 }
 
+/*------------------------------------------------------------About Band Text */
+
+.about-band {
+    background-color: #353434;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+
+.about-band-text {
+    font-family: "Staatliches", sans-serif;
+    color: #fafafa;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 2.5px dotted;
+    border-color: #ffc94c;
+    padding: 15px 0px 15px 0px;
+}
+
 /*-----------------------------------------------------------------Artist Bio */
 
 .artist-title {
